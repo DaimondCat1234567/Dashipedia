@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "ai-scratch",
+  "name": "dashipedia",
   "builds": [
     {
       "src": "public/*",
