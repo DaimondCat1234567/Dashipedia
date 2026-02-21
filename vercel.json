@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "name": "ai-scratch",
+  "builds": [
+    {
+      "src": "public/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/*/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/*.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    },
+    {
+      "src": "/api/([^.]+)",
+      "dest": "/api/$1.mjs"
+    },
+    {
+      "src": "/api/([^.]+)/([^.]+)",
+      "dest": "/api/$1/$2.mjs"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.+)/(.+)",
+      "dest": "/public/$1/$2"
+    }
+  ]
+}
