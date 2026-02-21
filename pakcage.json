@@ -1,0 +1,11 @@
+{
+  "name": "dashipedia",
+  "version": "0.0.1",
+  "description": "",
+  "author": "DaimondCat2026",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^5.0.0",
+  },
+  "devDependencies": {}
+}
