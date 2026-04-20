@@ -29,6 +29,14 @@
       "dest": "/api/$1/$2.mjs"
     },
     {
+      "src": "/user/([^.]+)/",
+      "dest": "/api/user.mjs?user=$1"
+    },
+    {
+      "src": "/page/([^.]+)/",
+      "dest": "/api/page.mjs?user=$1"
+    },
+    {
       "src": "/(.+)",
       "dest": "/public/$1"
     },
